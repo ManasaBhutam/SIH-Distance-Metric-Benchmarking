@@ -1,0 +1,7 @@
+Metric,Cluster,Size,AGE_median,SALARY_median,HRSWK_median,LFSTAT_most_common,ACTRD_most_common,BAIND_most_common,INDCODE_most_common,N2BAMED_most_common
+Gower,0,2504,38.0,94000.0,40.0,1,N,Y,7870.0,NOT_APPLICABLE
+Gower,1,496,63.0,94500.0,40.0,3,L,Y,Unknown,NOT_APPLICABLE
+Euclidean,0,2988,40.0,94500.0,40.0,1,N,Y,Unknown,NOT_APPLICABLE
+Euclidean,1,12,57.0,976934.0,49.0,1,N,Y,7270.0,NOT_APPLICABLE
+Cosine,0,2504,38.0,94000.0,40.0,1,N,Y,7870.0,NOT_APPLICABLE
+Cosine,1,496,63.0,94500.0,40.0,3,L,Y,Unknown,NOT_APPLICABLE

@@ -1,0 +1,35 @@
+SIH PROJECT: DISTANCE METRIC COMPARISON
+=======================================================
+
+Original dataset rows: 94606
+Original dataset columns: 548
+Sample size: 3000
+
+DISTANCE SUMMARY
+   Metric  Minimum     Mean   Median   Maximum  Standard Deviation
+    Gower      0.0 0.386461 0.307133  0.907258            0.199044
+Euclidean      0.0 3.495766 3.337264 14.137125            1.153225
+   Cosine      0.0 0.586027 0.520014  1.528216            0.264391
+
+SPEARMAN CORRELATIONS
+ Metric A  Metric B  Correlation
+    Gower Euclidean     0.801438
+    Gower    Cosine     0.883909
+Euclidean    Cosine     0.938344
+
+BEST CLUSTERING RESULTS
+   Metric  Clusters  Silhouette  Smallest Cluster  Largest Cluster
+Euclidean         2    0.684027                12             2988
+    Gower         2    0.634288               496             2504
+   Cosine         2    0.530943               496             2504
+
+CLUSTER PROFILES
+   Metric  Cluster  Size  AGE_median  SALARY_median  HRSWK_median LFSTAT_most_common ACTRD_most_common BAIND_most_common INDCODE_most_common N2BAMED_most_common
+    Gower        0  2504        38.0        94000.0          40.0                  1                 N                 Y              7870.0      NOT_APPLICABLE
+    Gower        1   496        63.0        94500.0          40.0                  3                 L                 Y             Unknown      NOT_APPLICABLE
+Euclidean        0  2988        40.0        94500.0          40.0                  1                 N                 Y             Unknown      NOT_APPLICABLE
+Euclidean        1    12        57.0       976934.0          49.0                  1                 N                 Y              7270.0      NOT_APPLICABLE
+   Cosine        0  2504        38.0        94000.0          40.0                  1                 N                 Y              7870.0      NOT_APPLICABLE
+   Cosine        1   496        63.0        94500.0          40.0                  3                 L                 Y             Unknown      NOT_APPLICABLE
+
+Note: Results are exploratory. Validate codebook definitions, missing-data handling, cluster stability and application performance before making final conclusions.

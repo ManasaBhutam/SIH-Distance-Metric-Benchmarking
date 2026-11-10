@@ -1,0 +1,40 @@
+SIH PROJECT - FINAL VALIDATION REPORT
+=======================================================
+
+DATASET INFORMATION
+Sample size: 3000
+
+EDUCATION VALIDATION
+Total records: 94606
+BAIND missing: 0
+N2BAMED missing: 0
+NOT_APPLICABLE: 6530
+UNKNOWN_MISSING: 0
+Remaining 999989: 0
+Remaining 999999: 0
+
+FEATURE INFLUENCE COMPARISON
+                         Model  Silhouette  Smallest Cluster  Largest Cluster  ARI vs Original
+        Original: All features    0.634288               496             2504              1.0
+Without missingness indicators    0.396497               496             2504              1.0
+    Without education features    0.740803               496             2504              1.0
+   Without employment features    0.667237               496             2504              1.0
+
+EMPLOYMENT VALIDATION
+LFSTAT      1   2    3
+Cluster               
+0        2504   0    0
+1           0  58  438
+
+MISSINGNESS VALIDATION (%)
+         SALARY_MISSING  HRSWK_MISSING  INDCODE_MISSING
+Cluster                                                
+0                   0.0            0.0              0.0
+1                 100.0          100.0            100.0
+
+INTERPRETATION NOTES
+1. Higher silhouette does not automatically mean better clustering.
+2. Cluster balance and ARI must also be considered.
+3. ARI measures agreement with the original labels, not external ground-truth accuracy.
+4. Feature-removal experiments indicate sensitivity to the selected variables.
+5. Results are exploratory and based on the existing 3000-record sample.

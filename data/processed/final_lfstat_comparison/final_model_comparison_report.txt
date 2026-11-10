@@ -1,0 +1,43 @@
+FINAL FEATURE INFLUENCE ANALYSIS
+============================================================
+
+Number of records: 3000
+
+MODEL A: ALL EIGHT FEATURES
+Silhouette Score: 0.3965
+Cluster Balance: 0.1981
+
+MODEL B: WITHOUT LFSTAT
+Silhouette Score: 0.2523
+Cluster Balance: 0.0578
+
+ARI BETWEEN MODELS: -0.0649
+
+CLUSTER SIZES
+                   Model  Cluster  Count  Percentage
+  Model A - All Features        1    496       16.53
+  Model A - All Features        2   2504       83.47
+Model B - Without LFSTAT        1    164        5.47
+Model B - Without LFSTAT        2   2836       94.53
+
+FEATURE MISSINGNESS
+Feature  Missing Count  Missing Percentage
+    AGE              0                 0.0
+ SALARY              0                 0.0
+  HRSWK              0                 0.0
+ LFSTAT              0                 0.0
+  ACTRD              0                 0.0
+  BAIND              0                 0.0
+INDCODE              0                 0.0
+N2BAMED              0                 0.0
+
+LFSTAT DISTRIBUTION IN MODEL A
+LFSTAT       1          2          3
+Cluster                             
+1          0.0  11.693548  88.306452
+2        100.0   0.000000   0.000000
+
+INTERPRETATION GUIDANCE
+Silhouette measures cluster separation using each model's own distance matrix. Cluster balance is the smallest cluster size divided by the largest cluster size. ARI measures agreement between the two cluster assignments. A low ARI indicates substantial changes in assignments. These measures should be interpreted together with cluster profiles, missing-data patterns, and the research objective.
+
+Model B still contains employment-related variables such as SALARY, HRSWK, ACTRD and INDCODE. Therefore, removing LFSTAT does not completely remove employment-related information.

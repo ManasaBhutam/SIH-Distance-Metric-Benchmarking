@@ -1,0 +1,7 @@
+Model 1,Model 2,Adjusted Rand Index
+Model A - All 8 Features,Model A - All 8 Features,1.0
+Model A - All 8 Features,Model B - Without LFSTAT,-0.06490640912977672
+Model A - All 8 Features,Model C - Demographic and Education,-0.0029772619195253436
+Model B - Without LFSTAT,Model B - Without LFSTAT,1.0
+Model B - Without LFSTAT,Model C - Demographic and Education,0.89761778743324
+Model C - Demographic and Education,Model C - Demographic and Education,1.0

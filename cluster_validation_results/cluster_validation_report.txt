@@ -1,0 +1,37 @@
+CLUSTER INTERPRETATION VALIDATION REPORT
+=======================================================
+
+Cluster sizes:
+Cluster
+0    2504
+1     496
+
+CATEGORICAL ASSOCIATION TESTS
+        Feature  Chi_Square  Degrees_of_Freedom  P_Value
+         LFSTAT 3000.000000                   2 0.000000
+          ACTRD 3000.000000                   2 0.000000
+          BAIND    3.553059                   2 0.169224
+        INDCODE 3000.000000                 181 0.000000
+ SALARY_MISSING 2992.757906                   1 0.000000
+  HRSWK_MISSING 2992.757906                   1 0.000000
+INDCODE_MISSING 2992.757906                   1 0.000000
+
+NUMERIC FEATURE PROFILES
+
+AGE
+         count       mean  median        std
+Cluster                                     
+0         2504  41.643371    38.0  12.808004
+1          496  55.877016    63.0  16.432015
+SALARY
+         count           mean   median           std
+Cluster                                             
+0         2504  107736.410942  94000.0  85790.816863
+1          496   94500.000000  94500.0      0.000000
+HRSWK
+         count       mean  median        std
+Cluster                                     
+0         2504  40.973642    40.0  10.946393
+1          496  40.000000    40.0   0.000000
+
+Interpretation note: Statistical association does not establish causation. Missing and logically skipped values must be distinguished from observed values.

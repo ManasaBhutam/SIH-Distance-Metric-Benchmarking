@@ -1,0 +1,59 @@
+EMPLOYMENT FEATURE INFLUENCE EXPERIMENT
+=================================================================
+
+Number of records: 3000
+
+MODEL SUMMARY
+-----------------------------------------------------------------
+                              Model  Feature Count                                              Features Used  Silhouette Score  Cluster Balance  Smallest Cluster  Largest Cluster
+           Model A - All 8 Features              8 AGE, SALARY, HRSWK, LFSTAT, ACTRD, BAIND, INDCODE, N2BAMED          0.396497         0.198083               496             2504
+           Model B - Without LFSTAT              7         AGE, SALARY, HRSWK, ACTRD, BAIND, INDCODE, N2BAMED          0.252321         0.057828               164             2836
+Model C - Demographic and Education              3                                        AGE, BAIND, N2BAMED          0.464053         0.069519               195             2805
+
+PAIRWISE MODEL AGREEMENT (ARI)
+-----------------------------------------------------------------
+                            Model 1                             Model 2  Adjusted Rand Index
+           Model A - All 8 Features            Model A - All 8 Features             1.000000
+           Model A - All 8 Features            Model B - Without LFSTAT            -0.064906
+           Model A - All 8 Features Model C - Demographic and Education            -0.002977
+           Model B - Without LFSTAT            Model B - Without LFSTAT             1.000000
+           Model B - Without LFSTAT Model C - Demographic and Education             0.897618
+Model C - Demographic and Education Model C - Demographic and Education             1.000000
+
+CLUSTER SIZES
+-----------------------------------------------------------------
+                              Model  Cluster  Count  Percentage
+           Model A - All 8 Features        1    496       16.53
+           Model A - All 8 Features        2   2504       83.47
+           Model B - Without LFSTAT        1    164        5.47
+           Model B - Without LFSTAT        2   2836       94.53
+Model C - Demographic and Education        1    195        6.50
+Model C - Demographic and Education        2   2805       93.50
+
+FEATURE MISSINGNESS
+-----------------------------------------------------------------
+Feature  Missing Count  Missing Percentage
+    AGE              0                 0.0
+ SALARY              0                 0.0
+  HRSWK              0                 0.0
+ LFSTAT              0                 0.0
+  ACTRD              0                 0.0
+  BAIND              0                 0.0
+INDCODE              0                 0.0
+N2BAMED              0                 0.0
+
+INTERPRETATION GUIDANCE
+-----------------------------------------------------------------
+Model A uses all eight original features.
+Model B excludes LFSTAT.
+Model C uses AGE, BAIND and N2BAMED only.
+
+Silhouette scores measure separation within each model's own distance matrix. They are not directly comparable as proof that one feature set is universally better.
+
+Cluster balance is the smallest cluster size divided by the largest cluster size. Higher values indicate more balanced cluster sizes.
+
+ARI measures agreement between two cluster assignments. A low or negative ARI indicates little agreement.
+
+Model C removes the selected employment-related variables, but the interpretation of BAIND and N2BAMED should still follow the NSCG codebook. Missing values and logical skips must not automatically be interpreted as meaningful groups.
+
+These experiments use a 3,000-record sample and two-cluster hierarchical clustering. Findings should be validated before generalizing to the full NSCG population.

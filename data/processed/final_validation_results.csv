@@ -1,0 +1,5 @@
+Model,Silhouette,Smallest Cluster,Largest Cluster,ARI vs Original
+Original: All features,0.6342876553535461,496,2504,1.0
+Without missingness indicators,0.3964971601963043,496,2504,1.0
+Without education features,0.7408032417297363,496,2504,1.0
+Without employment features,0.6672371625900269,496,2504,1.0

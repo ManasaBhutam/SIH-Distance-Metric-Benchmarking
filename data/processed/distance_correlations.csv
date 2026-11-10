@@ -1,0 +1,4 @@
+Metric A,Metric B,Correlation
+Gower,Euclidean,0.8014376945806522
+Gower,Cosine,0.8839093702117223
+Euclidean,Cosine,0.9383441952803568

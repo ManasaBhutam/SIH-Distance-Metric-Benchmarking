@@ -1,0 +1,7 @@
+Model,Cluster,Count,Percentage
+Model A - All 8 Features,1,496,16.53
+Model A - All 8 Features,2,2504,83.47
+Model B - Without LFSTAT,1,164,5.47
+Model B - Without LFSTAT,2,2836,94.53
+Model C - Demographic and Education,1,195,6.5
+Model C - Demographic and Education,2,2805,93.5

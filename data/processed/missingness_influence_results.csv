@@ -1,0 +1,3 @@
+Model,Silhouette,Smallest Cluster,Largest Cluster
+Original with missingness indicators,0.6342876553535461,496,2504
+Without missingness indicators,0.3964971601963043,496,2504
