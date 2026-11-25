@@ -1,3 +1,8 @@
+## 🚀 Live Project Demo
+
+**Live Dashboard:** [[text](https://sih-distance-metric-benchmarking-xnfnyz2khtmgvhcy8bdayy.streamlit.app/)]
+
+Built with Python, Streamlit, Pandas, NumPy, Scikit-learn, and Plotly.
 # SIH Distance Metric Benchmarking
 
 ### Comparative Study of Gower, Euclidean and Cosine Distance Metrics for Similarity-Based Grouping of Mixed-Format Alumni Profile Data
