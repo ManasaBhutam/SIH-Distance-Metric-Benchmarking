@@ -1,6 +1,6 @@
 ## 🚀 Live Project Demo
 
-**Live Dashboard:** [(https://sih-distance-metric-benchmarking-xnfnyz2khtmgvhcy8bdayy.streamlit.app/)]
+**Live Dashboard:** [https://sih-distance-metric-benchmarking-xnfnyz2khtmgvhcy8bdayy.streamlit.app/]
 
 Built with Python, Streamlit, Pandas, NumPy, Scikit-learn, and Plotly.
 # SIH Distance Metric Benchmarking
